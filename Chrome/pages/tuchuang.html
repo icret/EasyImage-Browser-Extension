@@ -21,17 +21,16 @@
 </head>
 
 <body>
-	<div class="row">
+	<div class="container-fluid">
 		<div id="dropzone">
-			<form id="EasyImage" class="dropzone" action="https://img.545141.com/api/index.php"
-				enctype="multipart/form-data" method="post">
+			<form id="EasyImage" class="dropzone" enctype="multipart/form-data" method="post" action=" ">
 				<div class="fallback">
 					<input id="drop" type="file" name="image" multiple />
 				</div>
 				<div class="dropzoneicon"></div>
 				<div class="dz-message needsclick">
-					<button type="button" class="dz-button">拖拽文件或点击选择本地文件进行上传</button><br />
-					<input name="token" type="hidden" value="1c17b11693cb5ec63859b091c5b9c1b2" />
+					<button type="button" id="button" class="dz-button">拖拽文件或点击选择本地文件进行上传</button><br />
+					<input name="token" type="hidden" id="apiToken" value="1c17b11693cb5ec63859b091c5b9c1b2" />
 					<span class="note needsclick">(严禁<strong>上传</strong>各类非法图片!)</span>
 				</div>
 			</form>
@@ -114,8 +113,9 @@
 	<footer style="text-align: center;font-size: x-small; ">
 		<hr />
 		<p>
-			Copyright © 2022 <a href="http://localhost/" target="_blank"> EasyImage Chrome</a> By <a
-				href="https://www.545141.com" target="_blank"> Icret</a> 请勿上传违反中国政策的图片
+			Copyright © 2021 <a href="https://img.545141.com/" target="_blank"> EasyImage Chrome</a> By <a href="https://www.545141.com" target="_blank"> Icret</a> 请勿上传违反中国政策的图片
+			<br />
+			<a href="/pages/options.html" target="_blank">插件配置</a> | <a href="https://github.com/icret/EasyImage-Browser-Extension" target="_blank">GIthub</a>
 		</p>
 	</footer>
 </body>

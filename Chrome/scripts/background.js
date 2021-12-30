@@ -2,7 +2,7 @@ chrome.browserAction.onClicked.addListener(function () {
 	chrome.windows.create({
 		url: 'pages/tuchuang.html',
 		width: 500,
-		height: 550,
+		height: 500,
 		focused: true,
 		type: 'popup'
 	});

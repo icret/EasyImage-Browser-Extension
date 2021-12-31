@@ -76,4 +76,3 @@ uploader.on("success", function (file, response) {
     $('#dellink').append(response.del + "\r\n");
     $("#outlink").show();
 });
-

@@ -21,6 +21,7 @@
     "webRequestBlocking",
     "tabs",
     "storage",
+    "contextMenus",
     "<all_urls>"
   ],
   "options_page": "pages/options.html",

@@ -1,7 +1,30 @@
-# EasyImage-Browser-Extension
-简单图床的浏览器上传插件
+# EasyImage-Browser-Extension 简单图床浏览器扩展
+
+* 此插件仅适用于 [EasyImages2.0](https://github.com/icret/EasyImages2.0) ,其他图床不一定能适配（如果请求与参数一致则可以）。
+
+## 安装使用
+1. 确定你的图床开启了API并且有可用Token
+2. 下载 [EasyImage-Chrome.crx](https://github.com/icret/EasyImage-Browser-Extension/blob/main/EasyImage-Chrome.crx) 插件
+- - 方法1：请点击chome浏览器最右侧的按钮（就是最右边的按钮嘛）-> 更多工具 -> 扩展程序 （或者地址栏输入chrome://extensions/）把下载下来的 EasyImage-Chrome.crx 文件拖进去就可以了。
+- - 方法2：把下载下来的 EasyImage-Chrome.crx 文件拖进浏览器随便一个页面就可以了,chrome插件同样也可以用于其他 chromium 内核浏览器（什么360急速啊，猎豹啊什么的都是一样的）
+3. 安装完毕后会弹出初始化配置（详见界面演示第三张图片),在配置中写入你的API网址和Token
+
+## 注意事项
+- 安装时最好开启Chrome插件的开发者模式
+- 使用chrome的同学注意了，因为不是商店的版本，所以直接安装会提示非商店的版本不能安装
+* [该扩展程序未列在 Chrome 网上应用店中，并可能是在您不知情的情况下添加的解决办法](https://zhuanlan.zhihu.com/p/106343392) 
+
+## 界面演示：
+![简单图床配置中心](https://blog.png.cm/usr/uploads/2021/12/595571957.png)
+
+![简单图床谷歌插件上传界面](https://blog.png.cm/usr/uploads/2021/12/225906016.png)
+
+![简单图床配置中心](https://blog.png.cm/usr/uploads/2021/12/2532516028.png)
 
 ### 更新日志
+
+* v0.0.3 2022-3-6
+- 更改演示地址
 
 * v0.0.2 2021-12-31
 - 优化内容显示

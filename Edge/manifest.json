@@ -1,5 +1,5 @@
 {
-  "name": "简单图床 - Chrome Version",
+  "name": "简单图床 - Edge Version",
   "version": "0.0.4",
   "manifest_version": 2,
   "description": "支持多文件上传的无数据库图床,最新html5自适应页面兼容手机电脑，简单方便支持一键复制，支持多域名，api上传。",
@@ -25,6 +25,5 @@
     "<all_urls>"
   ],
   "options_page": "pages/options.html",
-  "update_url": "https://github.com/icret/EasyImage-Browser-Extension",
   "homepage_url": "https://png.cm/"
 }

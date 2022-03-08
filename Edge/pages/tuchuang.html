@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>简单图床谷歌浏览器版 - EasyImage Chrome Version</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="简单图床,easyimage,无数据库图床,PHP多图长传程序,自适应页面,HTML5,markdown,bbscode,一键复制" />
+    <meta name="description" content="简单图床EasyImage是一款支持多文件上传的无数据库图床,可以完美替代PHP多图上传程序，最新html5自适应页面兼容手机电脑，上传后返回图片直链，markdown图片，论坛贴图bbscode链接，简单方便支持一键复制，支持多域名，api上传。" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/dropzone.min.css">
+    <link rel="stylesheet" href="/css/EasyImage_Chrome.css">
+    <link rel="stylesheet" href="/css/bs4.pop.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="dropzone">
+            <form id="EasyImage" class="dropzone" enctype="multipart/form-data" method="post" action=" ">
+                <div class="fallback">
+                    <input id="drop" type="file" name="image" multiple />
+                </div>
+                <div class="dropzoneicon"></div>
+                <div class="dz-message needsclick">
+                    <button type="button" id="button" class="dz-button">拖拽文件或点击选择本地文件进行上传</button><br />
+                    <input name="token" type="hidden" id="apiToken" value="" />
+                    <span class="note needsclick">(严禁<strong>上传</strong>各类非法图片!)</span>
+                </div>
+            </form>
+        </div>
+        <div class="container" id="outlink" style="display: none">
+
+            <div role="tabpanel">
+                <div class="mx-auto justify-content-md-center">
+                    <div class="list-group list-group-horizontal" style="text-align: center;" id="CodeList" role="tablist">
+                        <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#DC" role="tab">直链</a>
+                        <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#BC" role="tab">论坛</a>
+                        <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#MC" role="tab">Markdown</a>
+                        <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#html" role="tab">html</a>
+                        <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#del" role="tab">删除</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" id="DC" role="tabpanel">
+                    <div class="form-group">
+                        <label for="blink"></label>
+                        <textarea class="form-control" id="blink" rows="3"></textarea>
+                    </div>
+                    <button type="button" data-clipboard-action="copy" data-clipboard-target="#blink" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">复制</button>
+                </div>
+                <div class="tab-pane" id="BC" role="tabpanel">
+                    <div class="form-group">
+                        <label for="clink"></label>
+                        <textarea class="form-control" id="clink" rows="3"></textarea>
+                    </div>
+                    <button type="button" data-clipboard-action="copy" data-clipboard-target="#clink" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">复制</button>
+                </div>
+                <div class="tab-pane" id="MC" role="tabpanel">
+                    <div class="form-group">
+                        <label for="dlink"></label>
+                        <textarea class="form-control" id="dlink" rows="3"></textarea>
+                    </div>
+                    <button type="button" data-clipboard-action="copy" data-clipboard-target="#dlink" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">复制</button>
+                </div>
+                <div class="tab-pane" id="html" role="tabpanel">
+                    <div class="form-group">
+                        <label for="htmllink"></label>
+                        <textarea class="form-control" id="htmllink" rows="3"></textarea>
+                    </div>
+                    <button type="button" data-clipboard-action="copy" data-clipboard-target="#htmllink" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">复制</button>
+                </div>
+                <div class="tab-pane" id="del" role="tabpanel">
+                    <div class="form-group">
+                        <label for="dellink"></label>
+                        <textarea class="form-control" id="dellink" rows="3"></textarea>
+                    </div>
+                    <button type="button" data-clipboard-action="copy" data-clipboard-target="#dellink" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>del</b>">复制</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="/scripts/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="/scripts/dropzone.min.js"></script>
+    <script src="/scripts/clipboard.min.js"></script>
+    <script src='/scripts/EasyImage_Chrome.js'></script>
+    <script src='/scripts/bs4.pop.js'></script>
+    <footer style="text-align: center;font-size: x-small; ">
+        <hr />
+        <p>
+            Copyright © 2022 <a href="https://github.com/icret/EasyImage-Browser-Extension" target="_blank">Extension</a> for <a href="https://github.com/icret/EasyImages2.0" target="_blank">
+				EasyImage 2.0</a> By
+            <a href="https://png.cm" target="_blank"> Icret</a>
+            <br /><a href="/pages/options.html" target="_blank">插件配置</a> | <a href="/images/wechat.jpg" target="_blank">打赏作者</a>
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -5,14 +5,14 @@
 ## 安装使用
 ### Google Chrome
 1. 确定你的图床开启了API并且有可用Token
-2. 下载 [Chrome.crx](https://github.com/icret/EasyImage-Browser-Extension/blob/main/Chrome.crx) 插件
+2. 下载 [Chrome.crx](https://raw.githubusercontent.com/icret/EasyImage-Browser-Extension/main/Chrome.crx) 插件
 - - 方法1：请点击chome浏览器最右侧的按钮（就是最右边的按钮嘛）-> 更多工具 -> 扩展程序 （或者地址栏输入chrome://extensions/）把下载下来的 Chrome.crx 文件拖进去就可以了。
 - - 方法2：把下载下来的 Chrome.crx 文件拖进浏览器随便一个页面就可以了,chrome插件同样也可以用于其他 chromium 内核浏览器（什么360急速啊，猎豹啊什么的都是一样的）
 3. 安装完毕后会弹出初始化配置（详见界面演示第三张图片),在配置中写入你的API网址和Token
 
 ### 微软 Edge
 1. 使用Edge浏览器的[扩展中心](https://microsoftedge.microsoft.com)，搜索 `简单图床` 安装后初始化配置即可使用 直达->[简单图床 Edge版](https://microsoftedge.microsoft.com/addons/detail/hdafcoenpmebcjjcccojdlhfnndelefk)
-2. 直接下载[Edge.crx](https://github.com/icret/EasyImage-Browser-Extension/blob/main/Edge.crx) ，然后拖入Edge浏览器内
+2. 直接下载[Edge.crx](https://raw.githubusercontent.com/icret/EasyImage-Browser-Extension/main/Edge.crx) ，然后拖入Edge浏览器内
 
 ## 注意事项
 - 安装时最好开启Chrome插件的开发者模式

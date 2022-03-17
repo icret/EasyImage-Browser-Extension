@@ -1,6 +1,6 @@
 {
   "name": "简单图床 - Chrome Version",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "manifest_version": 2,
   "description": "支持多文件上传的无数据库图床,最新html5自适应页面兼容手机电脑，简单方便支持一键复制，支持多域名，api上传。",
   "background": {

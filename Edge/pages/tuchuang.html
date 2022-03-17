@@ -11,8 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>简单图床谷歌浏览器版 - EasyImage Chrome Version</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="简单图床,easyimage,无数据库图床,PHP多图长传程序,自适应页面,HTML5,markdown,bbscode,一键复制" />
-    <meta name="description" content="简单图床EasyImage是一款支持多文件上传的无数据库图床,可以完美替代PHP多图上传程序，最新html5自适应页面兼容手机电脑，上传后返回图片直链，markdown图片，论坛贴图bbscode链接，简单方便支持一键复制，支持多域名，api上传。" />
+    <meta name="keywords" content="简单图床,easyimage,easyimage2.0,无数据库图床,PHP多图长传程序,自适应页面,HTML5,markdown,bbscode,一键复制" />
+    <meta name="description" content="简单图床EasyImage是一款支持多文件上传的无数据库图床,可以完美替代PHP多图上传程序,最新html5自适应页面兼容手机电脑,上传后返回图片直链,markdown图片,论坛贴图bbscode链接,简单方便支持一键复制,支持多域名,api上传" />
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/dropzone.min.css">
     <link rel="stylesheet" href="/css/EasyImage_Chrome.css">
@@ -28,9 +28,10 @@
                 </div>
                 <div class="dropzoneicon"></div>
                 <div class="dz-message needsclick">
-                    <button type="button" id="button" class="dz-button">拖拽文件或点击选择本地文件进行上传</button><br />
+                    <span class="note needsclick">(严禁上传各类非法图片!)</span>
+                    <button type="button" id="button" class="dz-button">选择文件或拖拽至此处</button>
                     <input name="token" type="hidden" id="apiToken" value="" />
-                    <span class="note needsclick">(严禁<strong>上传</strong>各类非法图片!)</span>
+                    
                 </div>
             </form>
         </div>
@@ -53,36 +54,40 @@
                         <label for="blink"></label>
                         <textarea class="form-control" id="blink" rows="3"></textarea>
                     </div>
-                    <button type="button" data-clipboard-action="copy" data-clipboard-target="#blink" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">复制</button>
+                    <a href="?" class="btn btn-sm btn-danger" role="button">刷新</a>
+                    <button type="button" data-clipboard-action="copy" data-clipboard-target="#blink" class="btn btn-sm btn-primary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">复制</button>
                 </div>
                 <div class="tab-pane" id="BC" role="tabpanel">
                     <div class="form-group">
                         <label for="clink"></label>
                         <textarea class="form-control" id="clink" rows="3"></textarea>
                     </div>
-                    <button type="button" data-clipboard-action="copy" data-clipboard-target="#clink" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">复制</button>
+                    <a href="?" class="btn btn-sm btn-danger" role="button">刷新</a>
+                    <button type="button" data-clipboard-action="copy" data-clipboard-target="#clink" class="btn btn-sm btn-primary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">复制</button>
                 </div>
                 <div class="tab-pane" id="MC" role="tabpanel">
                     <div class="form-group">
                         <label for="dlink"></label>
                         <textarea class="form-control" id="dlink" rows="3"></textarea>
                     </div>
-                    <button type="button" data-clipboard-action="copy" data-clipboard-target="#dlink" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">复制</button>
+                    <a href="?" class="btn btn-sm btn-danger" role="button">刷新</a>
+                    <button type="button" data-clipboard-action="copy" data-clipboard-target="#dlink" class="btn btn-sm btn-primary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">复制</button>
                 </div>
                 <div class="tab-pane" id="html" role="tabpanel">
                     <div class="form-group">
                         <label for="htmllink"></label>
                         <textarea class="form-control" id="htmllink" rows="3"></textarea>
                     </div>
-                    <button type="button" data-clipboard-action="copy" data-clipboard-target="#htmllink" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">复制</button>
+                    <button type="button" data-clipboard-action="copy" data-clipboard-target="#htmllink" class="btn btn-sm btn-primary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">复制</button>
                 </div>
                 <div class="tab-pane" id="del" role="tabpanel">
                     <div class="form-group">
                         <label for="dellink"></label>
                         <textarea class="form-control" id="dellink" rows="3"></textarea>
                     </div>
-                    <button type="button" data-clipboard-action="copy" data-clipboard-target="#dellink" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>del</b>">复制</button>
-                </div>
+                    <a href="?" class="btn btn-sm btn-danger" role="button">刷新</a>
+                    <button type="button" data-clipboard-action="copy" data-clipboard-target="#dellink" class="btn btn-sm btn-primary" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>del</b>">复制</button>
+                </div>        
             </div>
         </div>
     </div>
@@ -92,13 +97,14 @@
     <script src="/scripts/clipboard.min.js"></script>
     <script src='/scripts/EasyImage_Chrome.js'></script>
     <script src='/scripts/bs4.pop.js'></script>
-    <footer style="text-align: center;font-size: x-small; ">
+    <footer style="text-align: center;font-size: x-small;">
         <hr />
         <p>
-            Copyright © 2022 <a href="https://github.com/icret/EasyImage-Browser-Extension" target="_blank">Extension</a> for <a href="https://github.com/icret/EasyImages2.0" target="_blank">
+            <a href="/pages/options.html" target="_blank" style="color:black;text-decoration:none;">插件配置</a> | <a href="/images/wechat.jpg" target="_blank" style="color:black;text-decoration:none;">打赏作者</a>
+        <br />
+            Copyright © 2022 <a href="https://github.com/icret/EasyImage-Browser-Extension" target="_blank" style="color:black;text-decoration:none">Extension</a> for <a href="https://github.com/icret/EasyImages2.0" target="_blank" style="color:black;text-decoration:none">
 				EasyImage 2.0</a> By
-            <a href="https://png.cm" target="_blank"> Icret</a>
-            <br /><a href="/pages/options.html" target="_blank">插件配置</a> | <a href="/images/wechat.jpg" target="_blank">打赏作者</a>
+            <a href="https://png.cm" target="_blank" style="color:black;text-decoration:none"> Icret</a>
         </p>
     </footer>
 </body>

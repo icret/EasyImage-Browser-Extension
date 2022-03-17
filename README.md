@@ -20,11 +20,11 @@
 * [该扩展程序未列在 Chrome 网上应用店中，并可能是在您不知情的情况下添加的解决办法](https://zhuanlan.zhihu.com/p/106343392) 
 
 ## 界面演示：
-![简单图床配置中心](https://blog.png.cm/usr/uploads/2021/12/595571957.png)
+![简单图床配置中心](./README/595571957.png)
 
-![简单图床谷歌插件上传界面](https://blog.png.cm/usr/uploads/2021/12/225906016.png)
+![简单图床谷歌插件上传界面](./README/225906016.png)
 
-![简单图床配置中心](https://blog.png.cm/usr/uploads/2021/12/2532516028.png)
+![简单图床配置中心](./README/2532516028.png)
 
 ## 更新日志
 

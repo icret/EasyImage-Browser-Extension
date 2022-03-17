@@ -11,7 +11,8 @@ document.getElementById('options_save').onclick = function () {
     localStorage.options_host = document.getElementById('options_host').value;
     localStorage.options_token = document.getElementById('options_token').value;
     alert("保存成功!")
-    window.location.href = "/pages/tuchuang.html";
+    // window.location.href = "/pages/tuchuang.html";   // 跳转
+    window.open("about:blank", "_self").close();       // 关闭当前页
 }
 /** 屏蔽右键菜单
 document.oncontextmenu = function () {

@@ -70,7 +70,7 @@ Dropzone.autoDiscover = false;
 
 // 上传成功
 uploader.on("success", function (file, response) {
-    var response = JSON.parse(response)
+    // var response = JSON.parse(response)
     console.log(response);
 
     if (response.code == 200) {

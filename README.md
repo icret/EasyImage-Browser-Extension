@@ -30,10 +30,13 @@
 
 ## 更新日志
 
-* v0.1.0 2026-04-07
-- 全面升级到 Manifest V3 (MV3) 规范
-- 存储机制从 localStorage 迁移至 chrome.storage.local
-- 移除冗余文件，优化插件结构
+* v1.0.0 2026-04-07
+- 完整升级到 Manifest V3（MV3）规范，background 使用 Service Worker
+- 将配置存储从 `localStorage` 迁移到 `chrome.storage.local`（修复 MV3 兼容性）
+- 修复若干 JS 语法与加载顺序问题（`EasyImage_Chrome.js`、`options.js` 等）
+- 移除重复文件 `dropzone-min.js`，保留 `dropzone.min.js`
+- 生成并替换 `Chrome.crx` 和 `Edge.crx`，并将私钥移动到 `keys/`
+- README 和版本号更新为 `v1.0.0`
 
 * v0.0.5 2022-03-18
 * 增加刷新

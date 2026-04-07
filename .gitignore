@@ -2,8 +2,9 @@
 .DS_Store
 
 # Keys and private files
-/keys/
-*.pem
+# (已按要求提交私钥到仓库, 此处保留注释以示注意)
+# /keys/
+# *.pem
 
 # Editor
 .vscode/

@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Keys and private files
+/keys/
+*.pem
+
+# Editor
+.vscode/

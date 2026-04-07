@@ -1,4 +1,4 @@
-chrome.browserAction.onClicked.addListener(function () {
+chrome.action.onClicked.addListener(function () {
 	chrome.windows.create({
 		url: 'pages/tuchuang.html',
 		width: 500,
@@ -8,5 +8,5 @@ chrome.browserAction.onClicked.addListener(function () {
 	});
 });
 
-// chrome.browserAction.setBadgeText({text: 'new'});
-// chrome.browserAction.setBadgeBackgroundColor({color: [255, 0, 0, 255]});
+// chrome.action.setBadgeText({text: 'new'});
+// chrome.action.setBadgeBackgroundColor({color: [255, 0, 0, 255]});
